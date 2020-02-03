@@ -1,6 +1,6 @@
 {
   "name": "dyna-slack",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Post on Slack easier",
   "repository": {
     "type": "git",
