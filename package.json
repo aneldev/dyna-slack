@@ -1,10 +1,10 @@
 {
   "name": "dyna-slack",
-  "version": "0.0.1",
-  "description": "The dyna-slack",
+  "version": "1.0.1",
+  "description": "Post on Slack easier",
   "repository": {
     "type": "git",
-    "url": "http://github.com/YOUR_ACCOUNT/dyna-slack"
+    "url": "http://github.com/aneldev/dyna-slack"
   },
   "sideEffects": false,
   "source": "src/index.ts",
