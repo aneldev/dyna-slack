@@ -4,6 +4,8 @@ Simplifies the way to post a message on Slack Channel as a bot.
 
 Written in Typescript. Working in Node.
 
+_Read at the bottom how to create your Webhook URL._
+
 # Example
 
 ## Simple
@@ -19,7 +21,7 @@ import {
 const dynaSlack = new DynaSlack({
   channels: {
     "my-app-fire": {
-      webhookUrl: "https://hooks.slack.com/services/xxxxxxxx/YOUR_API_KEY",
+      webhookUrl: "<your Webhook URL>",
     }
   }
 });
@@ -47,7 +49,7 @@ import {
 const dynaSlack = new DynaSlack({
   channels: {
     "my-app-fire": {
-      webhookUrl: "https://hooks.slack.com/services/xxxxxxxx/YOUR_API_KEY",
+      webhookUrl: "<your Webhook URL>",
     }
   }
 });
@@ -135,3 +137,15 @@ formatSnippetObject = (
   }
 ): string
 ```
+# How to create your Webhook URL
+
+- Open [slack.com](https://www.slack.com)
+- Your Workspaces
+- Choose one
+- Click on the name of the workspace right top
+- Select "Administration"
+- Select "Manage Apps"
+- Select "Apps"
+- Add "Incoming WebHooks"
+- Click "Add to Slack" (this is needed for each channel)
+- Select the desired channel and get the "Webhook URL"
