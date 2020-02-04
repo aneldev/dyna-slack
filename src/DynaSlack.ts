@@ -13,6 +13,12 @@ export interface ISlackConnectionChannel {
   webhookUrl: string;
 }
 
+export interface IPost {
+  channelName: string;
+  username: string;
+  message: string;
+}
+
 export class DynaSlack {
   private slackChannels: {
     [channelName: string]: Slack;
@@ -31,11 +37,7 @@ export class DynaSlack {
       channelName,
       username,
       message,
-    }: {
-      channelName: string;
-      username: string;
-      message: string;
-    },
+    }: IPost,
   ): Promise<void> {
     const slackChannel = this.slackChannels[channelName];
 

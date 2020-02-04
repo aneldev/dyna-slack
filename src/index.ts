@@ -2,6 +2,7 @@ export {
   DynaSlack,
   IDynaSlackConfig,
   ISlackConnectionChannel,
+  IPost,
 } from "./DynaSlack";
 
 export {
