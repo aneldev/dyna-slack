@@ -1,2 +1,2 @@
-export { DynaSlack, IDynaSlackConfig, ISlackConnectionChannel, } from "./DynaSlack";
+export { DynaSlack, IDynaSlackConfig, ISlackConnectionChannel, IPost, } from "./DynaSlack";
 export { formatLink, formatSnippetText, formatSnippetObject, } from "./formatters";
