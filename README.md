@@ -1,6 +1,6 @@
 # Dyna Slack
 
-Simplified the way to post a message on Slack Channel as a bot.
+Simplifies the way to post a message on Slack Channel as a bot.
 
 Written in Typescript. Working in Node.
 
@@ -34,7 +34,7 @@ dynaSlack.post({
 
 ## With formatters
 
-Formatters are few function that apply the Slack's markup for you.
+Formatters are few functions that apply the Slack's markup for you.
 
 ```
 import {
@@ -80,4 +80,58 @@ post({
     username: string;
     message: string;
 }): Promise<void>;
+```
+
+# Formatters
+
+## formatLink
+
+To create a link.
+
+```
+formatLink = (
+  {
+    url,
+    label,
+  }: {
+    url: string;
+    label?: string;
+  }
+): string
+```
+
+## formatSnippetText
+
+To create a snippet.
+
+```
+formatSnippetText = (
+  {
+    title,
+    text,
+    newLine,
+  }: {
+    title?: string;
+    text: string;
+    newLine?: boolean; // default is false
+  }
+): string 
+```
+
+## formatSnippetObject
+
+Stringifies an object and formats it as a snippet.
+
+```
+formatSnippetObject = (
+  {
+    title,
+    object,
+    newLine,
+  }: {
+    title?: string;
+    object: any;
+    newLine?: boolean; // default is false
+  }
+): string
 ```
